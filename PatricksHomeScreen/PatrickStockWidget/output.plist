@@ -15,7 +15,7 @@
 		<key>Symbol</key>
 		<string>AAPL</string>
 		<key>Time</key>
-		<string>03:48 PM</string>
+		<string>12:38 AM</string>
 		<key>Value</key>
 		<real>312.6351</real>
 	</dict>
@@ -32,7 +32,7 @@
 		<key>Symbol</key>
 		<string>AMD</string>
 		<key>Time</key>
-		<string>03:48 PM</string>
+		<string>12:38 AM</string>
 		<key>Value</key>
 		<real>274.6968</real>
 	</dict>
@@ -49,7 +49,7 @@
 		<key>Symbol</key>
 		<string>CDNS</string>
 		<key>Time</key>
-		<string>03:48 PM</string>
+		<string>12:38 AM</string>
 		<key>Value</key>
 		<real>499.1386</real>
 	</dict>
@@ -66,7 +66,7 @@
 		<key>Symbol</key>
 		<string>INTC</string>
 		<key>Time</key>
-		<string>03:48 PM</string>
+		<string>12:38 AM</string>
 		<key>Value</key>
 		<real>258.96999999999997</real>
 	</dict>
@@ -83,7 +83,7 @@
 		<key>Symbol</key>
 		<string>MSFT</string>
 		<key>Time</key>
-		<string>03:48 PM</string>
+		<string>12:38 AM</string>
 		<key>Value</key>
 		<real>350.2766</real>
 	</dict>
@@ -100,7 +100,7 @@
 		<key>Symbol</key>
 		<string>QCOM</string>
 		<key>Time</key>
-		<string>03:48 PM</string>
+		<string>12:38 AM</string>
 		<key>Value</key>
 		<real>600.2685</real>
 	</dict>

@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD08C13C2BC868F100B4E384 /* PatricksHomeScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD08C13B2BC868F100B4E384 /* PatricksHomeScreenApp.swift */; };
+		CD08C13E2BC868F100B4E384 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD08C13D2BC868F100B4E384 /* ContentView.swift */; };
+		CD08C1402BC868F200B4E384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD08C13F2BC868F200B4E384 /* Assets.xcassets */; };
+		CD08C1432BC868F200B4E384 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD08C1422BC868F200B4E384 /* Preview Assets.xcassets */; };
+		CD08C14E2BC868F200B4E384 /* PatricksHomeScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD08C14D2BC868F200B4E384 /* PatricksHomeScreenTests.swift */; };
+		CD08C1582BC868F200B4E384 /* PatricksHomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD08C1572BC868F200B4E384 /* PatricksHomeScreenUITests.swift */; };
+		CD08C15A2BC868F200B4E384 /* PatricksHomeScreenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD08C1592BC868F200B4E384 /* PatricksHomeScreenUITestsLaunchTests.swift */; };
+		CD08C16D2BC9623200B4E384 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD08C16C2BC9623200B4E384 /* Info.plist */; };
+		CD154AAD2BCA9471002BE06A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD655FB22BC9F35C00620515 /* WidgetKit.framework */; };
+		CD154AAE2BCA9471002BE06A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD655FB42BC9F35C00620515 /* SwiftUI.framework */; };
+		CD154AB12BCA9471002BE06A /* PatrickStockWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD154AB02BCA9471002BE06A /* PatrickStockWidgetBundle.swift */; };
+		CD154AB32BCA9471002BE06A /* PatrickStockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD154AB22BCA9471002BE06A /* PatrickStockWidget.swift */; };
+		CD154AB52BCA9471002BE06A /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD154AB42BCA9471002BE06A /* AppIntent.swift */; };
+		CD154AB72BCA9472002BE06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD154AB62BCA9472002BE06A /* Assets.xcassets */; };
+		CD154ABC2BCA9472002BE06A /* PatrickStockWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CD154AAC2BCA9471002BE06A /* PatrickStockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD154AC22BCC1D3A002BE06A /* testData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD154AC02BCC1C47002BE06A /* testData.plist */; };
+		CD154AC32BCC1D65002BE06A /* output.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD154AC12BCC1C47002BE06A /* output.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD08C14A2BC868F200B4E384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD08C1302BC868F100B4E384 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD08C1372BC868F100B4E384;
+			remoteInfo = PatricksHomeScreen;
+		};
+		CD08C1542BC868F200B4E384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD08C1302BC868F100B4E384 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD08C1372BC868F100B4E384;
+			remoteInfo = PatricksHomeScreen;
+		};
+		CD154ABA2BCA9472002BE06A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD08C1302BC868F100B4E384 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD154AAB2BCA9471002BE06A;
+			remoteInfo = PatrickStockWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD655FC72BC9F35D00620515 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD154ABC2BCA9472002BE06A /* PatrickStockWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD08C1382BC868F100B4E384 /* PatricksHomeScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatricksHomeScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD08C13B2BC868F100B4E384 /* PatricksHomeScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatricksHomeScreenApp.swift; sourceTree = "<group>"; };
+		CD08C13D2BC868F100B4E384 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD08C13F2BC868F200B4E384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD08C1422BC868F200B4E384 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD08C1442BC868F200B4E384 /* PatricksHomeScreen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PatricksHomeScreen.entitlements; sourceTree = "<group>"; };
+		CD08C1492BC868F200B4E384 /* PatricksHomeScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatricksHomeScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD08C14D2BC868F200B4E384 /* PatricksHomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatricksHomeScreenTests.swift; sourceTree = "<group>"; };
+		CD08C1532BC868F200B4E384 /* PatricksHomeScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatricksHomeScreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD08C1572BC868F200B4E384 /* PatricksHomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatricksHomeScreenUITests.swift; sourceTree = "<group>"; };
+		CD08C1592BC868F200B4E384 /* PatricksHomeScreenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatricksHomeScreenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD08C16C2BC9623200B4E384 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD154AAC2BCA9471002BE06A /* PatrickStockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PatrickStockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD154AB02BCA9471002BE06A /* PatrickStockWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatrickStockWidgetBundle.swift; sourceTree = "<group>"; };
+		CD154AB22BCA9471002BE06A /* PatrickStockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatrickStockWidget.swift; sourceTree = "<group>"; };
+		CD154AB42BCA9471002BE06A /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		CD154AB62BCA9472002BE06A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD154AB82BCA9472002BE06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD154AB92BCA9472002BE06A /* PatrickStockWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PatrickStockWidget.entitlements; sourceTree = "<group>"; };
+		CD154AC02BCC1C47002BE06A /* testData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = testData.plist; sourceTree = "<group>"; };
+		CD154AC12BCC1C47002BE06A /* output.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = output.plist; sourceTree = "<group>"; };
+		CD655FB22BC9F35C00620515 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CD655FB42BC9F35C00620515 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD08C1352BC868F100B4E384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD08C1462BC868F200B4E384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD08C1502BC868F200B4E384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD154AA92BCA9471002BE06A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD154AAE2BCA9471002BE06A /* SwiftUI.framework in Frameworks */,
+				CD154AAD2BCA9471002BE06A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD08C12F2BC868F100B4E384 = {
+			isa = PBXGroup;
+			children = (
+				CD08C13A2BC868F100B4E384 /* PatricksHomeScreen */,
+				CD08C14C2BC868F200B4E384 /* PatricksHomeScreenTests */,
+				CD08C1562BC868F200B4E384 /* PatricksHomeScreenUITests */,
+				CD154AAF2BCA9471002BE06A /* PatrickStockWidget */,
+				CD655FB12BC9F35C00620515 /* Frameworks */,
+				CD08C1392BC868F100B4E384 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD08C1392BC868F100B4E384 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD08C1382BC868F100B4E384 /* PatricksHomeScreen.app */,
+				CD08C1492BC868F200B4E384 /* PatricksHomeScreenTests.xctest */,
+				CD08C1532BC868F200B4E384 /* PatricksHomeScreenUITests.xctest */,
+				CD154AAC2BCA9471002BE06A /* PatrickStockWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD08C13A2BC868F100B4E384 /* PatricksHomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CD08C16C2BC9623200B4E384 /* Info.plist */,
+				CD08C13B2BC868F100B4E384 /* PatricksHomeScreenApp.swift */,
+				CD08C13D2BC868F100B4E384 /* ContentView.swift */,
+				CD08C13F2BC868F200B4E384 /* Assets.xcassets */,
+				CD08C1442BC868F200B4E384 /* PatricksHomeScreen.entitlements */,
+				CD08C1412BC868F200B4E384 /* Preview Content */,
+			);
+			path = PatricksHomeScreen;
+			sourceTree = "<group>";
+		};
+		CD08C1412BC868F200B4E384 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD08C1422BC868F200B4E384 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD08C14C2BC868F200B4E384 /* PatricksHomeScreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD08C14D2BC868F200B4E384 /* PatricksHomeScreenTests.swift */,
+			);
+			path = PatricksHomeScreenTests;
+			sourceTree = "<group>";
+		};
+		CD08C1562BC868F200B4E384 /* PatricksHomeScreenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD08C1572BC868F200B4E384 /* PatricksHomeScreenUITests.swift */,
+				CD08C1592BC868F200B4E384 /* PatricksHomeScreenUITestsLaunchTests.swift */,
+			);
+			path = PatricksHomeScreenUITests;
+			sourceTree = "<group>";
+		};
+		CD154AAF2BCA9471002BE06A /* PatrickStockWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CD154AC12BCC1C47002BE06A /* output.plist */,
+				CD154AC02BCC1C47002BE06A /* testData.plist */,
+				CD154AB02BCA9471002BE06A /* PatrickStockWidgetBundle.swift */,
+				CD154AB22BCA9471002BE06A /* PatrickStockWidget.swift */,
+				CD154AB42BCA9471002BE06A /* AppIntent.swift */,
+				CD154AB62BCA9472002BE06A /* Assets.xcassets */,
+				CD154AB82BCA9472002BE06A /* Info.plist */,
+				CD154AB92BCA9472002BE06A /* PatrickStockWidget.entitlements */,
+			);
+			path = PatrickStockWidget;
+			sourceTree = "<group>";
+		};
+		CD655FB12BC9F35C00620515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD655FB22BC9F35C00620515 /* WidgetKit.framework */,
+				CD655FB42BC9F35C00620515 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD08C1372BC868F100B4E384 /* PatricksHomeScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD08C15D2BC868F200B4E384 /* Build configuration list for PBXNativeTarget "PatricksHomeScreen" */;
+			buildPhases = (
+				CD08C1342BC868F100B4E384 /* Sources */,
+				CD08C1352BC868F100B4E384 /* Frameworks */,
+				CD08C1362BC868F100B4E384 /* Resources */,
+				CD655FC72BC9F35D00620515 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD154ABB2BCA9472002BE06A /* PBXTargetDependency */,
+			);
+			name = PatricksHomeScreen;
+			productName = PatricksHomeScreen;
+			productReference = CD08C1382BC868F100B4E384 /* PatricksHomeScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD08C1482BC868F200B4E384 /* PatricksHomeScreenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD08C1602BC868F200B4E384 /* Build configuration list for PBXNativeTarget "PatricksHomeScreenTests" */;
+			buildPhases = (
+				CD08C1452BC868F200B4E384 /* Sources */,
+				CD08C1462BC868F200B4E384 /* Frameworks */,
+				CD08C1472BC868F200B4E384 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD08C14B2BC868F200B4E384 /* PBXTargetDependency */,
+			);
+			name = PatricksHomeScreenTests;
+			productName = PatricksHomeScreenTests;
+			productReference = CD08C1492BC868F200B4E384 /* PatricksHomeScreenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD08C1522BC868F200B4E384 /* PatricksHomeScreenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD08C1632BC868F200B4E384 /* Build configuration list for PBXNativeTarget "PatricksHomeScreenUITests" */;
+			buildPhases = (
+				CD08C14F2BC868F200B4E384 /* Sources */,
+				CD08C1502BC868F200B4E384 /* Frameworks */,
+				CD08C1512BC868F200B4E384 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD08C1552BC868F200B4E384 /* PBXTargetDependency */,
+			);
+			name = PatricksHomeScreenUITests;
+			productName = PatricksHomeScreenUITests;
+			productReference = CD08C1532BC868F200B4E384 /* PatricksHomeScreenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CD154AAB2BCA9471002BE06A /* PatrickStockWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD154ABD2BCA9472002BE06A /* Build configuration list for PBXNativeTarget "PatrickStockWidgetExtension" */;
+			buildPhases = (
+				CD154AA82BCA9471002BE06A /* Sources */,
+				CD154AA92BCA9471002BE06A /* Frameworks */,
+				CD154AAA2BCA9471002BE06A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PatrickStockWidgetExtension;
+			productName = PatrickStockWidgetExtension;
+			productReference = CD154AAC2BCA9471002BE06A /* PatrickStockWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD08C1302BC868F100B4E384 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CD08C1372BC868F100B4E384 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					CD08C1482BC868F200B4E384 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CD08C1372BC868F100B4E384;
+					};
+					CD08C1522BC868F200B4E384 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CD08C1372BC868F100B4E384;
+					};
+					CD154AAB2BCA9471002BE06A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = CD08C1332BC868F100B4E384 /* Build configuration list for PBXProject "PatricksHomeScreen" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD08C12F2BC868F100B4E384;
+			productRefGroup = CD08C1392BC868F100B4E384 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD08C1372BC868F100B4E384 /* PatricksHomeScreen */,
+				CD08C1482BC868F200B4E384 /* PatricksHomeScreenTests */,
+				CD08C1522BC868F200B4E384 /* PatricksHomeScreenUITests */,
+				CD154AAB2BCA9471002BE06A /* PatrickStockWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD08C1362BC868F100B4E384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD08C16D2BC9623200B4E384 /* Info.plist in Resources */,
+				CD08C1432BC868F200B4E384 /* Preview Assets.xcassets in Resources */,
+				CD08C1402BC868F200B4E384 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD08C1472BC868F200B4E384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD08C1512BC868F200B4E384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD154AAA2BCA9471002BE06A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD154AC22BCC1D3A002BE06A /* testData.plist in Resources */,
+				CD154AC32BCC1D65002BE06A /* output.plist in Resources */,
+				CD154AB72BCA9472002BE06A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD08C1342BC868F100B4E384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD08C13E2BC868F100B4E384 /* ContentView.swift in Sources */,
+				CD08C13C2BC868F100B4E384 /* PatricksHomeScreenApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD08C1452BC868F200B4E384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD08C14E2BC868F200B4E384 /* PatricksHomeScreenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD08C14F2BC868F200B4E384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD08C15A2BC868F200B4E384 /* PatricksHomeScreenUITestsLaunchTests.swift in Sources */,
+				CD08C1582BC868F200B4E384 /* PatricksHomeScreenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD154AA82BCA9471002BE06A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD154AB12BCA9471002BE06A /* PatrickStockWidgetBundle.swift in Sources */,
+				CD154AB32BCA9471002BE06A /* PatrickStockWidget.swift in Sources */,
+				CD154AB52BCA9471002BE06A /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD08C14B2BC868F200B4E384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD08C1372BC868F100B4E384 /* PatricksHomeScreen */;
+			targetProxy = CD08C14A2BC868F200B4E384 /* PBXContainerItemProxy */;
+		};
+		CD08C1552BC868F200B4E384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD08C1372BC868F100B4E384 /* PatricksHomeScreen */;
+			targetProxy = CD08C1542BC868F200B4E384 /* PBXContainerItemProxy */;
+		};
+		CD154ABB2BCA9472002BE06A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD154AAB2BCA9471002BE06A /* PatrickStockWidgetExtension */;
+			targetProxy = CD154ABA2BCA9472002BE06A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD08C15B2BC868F200B4E384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD08C15C2BC868F200B4E384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CD08C15E2BC868F200B4E384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PatricksHomeScreen/PatricksHomeScreen.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PatricksHomeScreen/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PatricksHomeScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD08C15F2BC868F200B4E384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PatricksHomeScreen/PatricksHomeScreen.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PatricksHomeScreen/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PatricksHomeScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CD08C1612BC868F200B4E384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PatricksHomeScreenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatricksHomeScreen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PatricksHomeScreen";
+			};
+			name = Debug;
+		};
+		CD08C1622BC868F200B4E384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PatricksHomeScreenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatricksHomeScreen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PatricksHomeScreen";
+			};
+			name = Release;
+		};
+		CD08C1642BC868F200B4E384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PatricksHomeScreenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PatricksHomeScreen;
+			};
+			name = Debug;
+		};
+		CD08C1652BC868F200B4E384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PatricksHomeScreenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PatricksHomeScreen;
+			};
+			name = Release;
+		};
+		CD154ABE2BCA9472002BE06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PatrickStockWidget/PatrickStockWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PatrickStockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PatrickStockWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PatricksHomeScreen.PatrickStockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD154ABF2BCA9472002BE06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PatrickStockWidget/PatrickStockWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PatrickStockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PatrickStockWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PatricksHomeScreen.PatrickStockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD08C1332BC868F100B4E384 /* Build configuration list for PBXProject "PatricksHomeScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD08C15B2BC868F200B4E384 /* Debug */,
+				CD08C15C2BC868F200B4E384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD08C15D2BC868F200B4E384 /* Build configuration list for PBXNativeTarget "PatricksHomeScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD08C15E2BC868F200B4E384 /* Debug */,
+				CD08C15F2BC868F200B4E384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD08C1602BC868F200B4E384 /* Build configuration list for PBXNativeTarget "PatricksHomeScreenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD08C1612BC868F200B4E384 /* Debug */,
+				CD08C1622BC868F200B4E384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD08C1632BC868F200B4E384 /* Build configuration list for PBXNativeTarget "PatricksHomeScreenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD08C1642BC868F200B4E384 /* Debug */,
+				CD08C1652BC868F200B4E384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD154ABD2BCA9472002BE06A /* Build configuration list for PBXNativeTarget "PatrickStockWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD154ABE2BCA9472002BE06A /* Debug */,
+				CD154ABF2BCA9472002BE06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD08C1302BC868F100B4E384 /* Project object */;
+}

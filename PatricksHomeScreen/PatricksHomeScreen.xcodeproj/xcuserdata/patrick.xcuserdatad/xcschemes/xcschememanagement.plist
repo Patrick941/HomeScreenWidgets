@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>PatrickStockWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>PatricksHomeScreen.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>StockWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CD08C1372BC868F100B4E384</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD08C1482BC868F200B4E384</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD08C1522BC868F200B4E384</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD154A922BCA876A002BE06A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD655FAF2BC9F35C00620515</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

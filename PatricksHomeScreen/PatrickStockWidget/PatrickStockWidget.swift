@@ -45,59 +45,47 @@ struct Provider: TimelineProvider {
             let data = try Data(contentsOf: url)
             print("Data loaded")
 
-            // Decode the data into a dictionary of [String: StockInfo]
-            let result = try PropertyListDecoder().decode([String: StockInfo].self, from: data)
-            print("Data decoded")
+            // Attempt to decode the data into a generic dictionary
+            if let result = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: [String: Any]] {
+                print("Data decoded")
 
-            // Combine all stock info into a single string
-            return result.map { (symbol, info) in
-                formatStockInfo(symbol: symbol, info: info)
-            }.joined(separator: "\n\n")
+                // Combine all stock info into a single string
+                return result.map { (symbol, info) in
+                    formatStockInfo(symbol: symbol, info: info)
+                }.joined(separator: "\n\n")
+            } else {
+                return "Data format is incorrect"
+            }
         } catch {
             print("Error during data loading or decoding: \(error)")
             return "Default data - \(error.localizedDescription)"
         }
     }
 
-    func formatStockInfo(symbol: String, info: StockInfo) -> String {
-        var formattedString = "Symbol: \(symbol)\n"
-        
-        if let margin = info.margin {
-            formattedString += "Margin: \(margin)\n"
+    func formatStockInfo(symbol: String, info: [String: Any]) -> String {
+        var formattedString = "\(symbol): "
+
+        if let value = info["Value"] as? Double {
+            formattedString += "Val: \(String(format: "%.2f", value)), "
         } else {
-            formattedString += "Margin: N/A\n"
+            formattedString += "Val: N/A, "
         }
-        
-        if let originalPrice = info.originalPrice {
-            formattedString += "Original Price: \(originalPrice)\n"
+
+        if let margin = info["Margin"] as? Double {
+            formattedString += "Margin: \(String(format: "%.2f%", margin)), "
         } else {
-            formattedString += "Original Price: N/A\n"
+            formattedString += "Margin: N/A, "
         }
-        
-        if let price = info.price {
-            formattedString += "Price: \(price)\n"
+
+        if let time = info["Time"] as? String {
+            formattedString += "Time: \(time)"
         } else {
-            formattedString += "Price: N/A\n"
+            formattedString += "Time: N/A"
         }
-        
-        if let time = info.time {
-            formattedString += "Time: \(time)\n"
-        } else {
-            formattedString += "Time: N/A\n"
-        }
-        
-        if let value = info.value {
-            formattedString += "Value: \(value)\n"
-        } else {
-            formattedString += "Value: N/A\n"
-        }
+
         
         return formattedString
     }
-
-
-
-
 }
 
 struct SimpleEntry: TimelineEntry {
@@ -107,13 +95,21 @@ struct SimpleEntry: TimelineEntry {
 
 struct WidgetEntryView : View {
     var entry: Provider.Entry
+    
+    let textColour = Color.green
 
     var body: some View {
         Text(entry.widgetData)
-            .padding()
+            .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+            .font(.custom("Helvetica Neue", size: 12))
+            .foregroundColor(textColour) // Ensuring the text color is white for better contrast
+            .lineLimit(nil)
+            .background(
+                LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.7), Color.gray.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            )
             .containerBackground(for: .widget) {
-                            Color.gray.opacity(0.5) // Example of setting a semi-transparent grey background
-                        }
+                LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.7), Color.gray.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            }
             .widgetURL(URL(string: "your-url-scheme://action"))  // Optional: Add a deep link URL
     }
 }
@@ -128,6 +124,5 @@ struct StockWidget: Widget {
             WidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Your Widget Name")
-        .description("This is an example widget showing data from plist.")
     }
 }

@@ -4,7 +4,7 @@ import Foundation
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), widgetData: loadWidgetData())
+        SimpleEntry(date: Date(), widgetData: [])
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
@@ -13,15 +13,12 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> ()) {
-        var entries: [SimpleEntry] = []
         let currentDate = Date()
         let entryData = loadWidgetData()
         
         // Generate a timeline consisting of only one entry
         let entry = SimpleEntry(date: currentDate, widgetData: entryData)
-        entries.append(entry)
-        
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+        let timeline = Timeline(entries: [entry], policy: .atEnd)
         completion(timeline)
     }
     
@@ -35,85 +32,60 @@ struct Provider: TimelineProvider {
         let value: Double?
     }
 
-    func loadWidgetData() -> String {
+    func loadWidgetData() -> [StockInfo] {
         guard let url = Bundle.main.url(forResource: "output", withExtension: "plist") else {
-            print("File does not exist in bundle")
-            return "Default data - File does not exist in bundle"
+            return []
         }
 
         do {
             let data = try Data(contentsOf: url)
-            print("Data loaded")
-
-            // Attempt to decode the data into a generic dictionary
             if let result = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: [String: Any]] {
-                print("Data decoded")
-
-                // Combine all stock info into a single string
-                return result.map { (symbol, info) in
-                    formatStockInfo(symbol: symbol, info: info)
-                }.joined(separator: "\n\n")
+                return result.map { (symbol, info) -> StockInfo in
+                    return parseStockInfo(symbol: symbol, info: info)
+                }
             } else {
-                return "Data format is incorrect"
+                return []
             }
         } catch {
             print("Error during data loading or decoding: \(error)")
-            return "Default data - \(error.localizedDescription)"
+            return []
         }
     }
 
-    func formatStockInfo(symbol: String, info: [String: Any]) -> String {
-        var formattedString = "\(symbol): "
-
-        if let value = info["Value"] as? Double {
-            formattedString += "Val: \(String(format: "%.2f", value)), "
-        } else {
-            formattedString += "Val: N/A, "
-        }
-
-        if let margin = info["Margin"] as? Double {
-            formattedString += "Margin: \(String(format: "%.2f%", margin)), "
-        } else {
-            formattedString += "Margin: N/A, "
-        }
-
-        if let time = info["Time"] as? String {
-            formattedString += "Time: \(time)"
-        } else {
-            formattedString += "Time: N/A"
-        }
-
-        
-        return formattedString
+    func parseStockInfo(symbol: String, info: [String: Any]) -> StockInfo {
+        return StockInfo(
+            margin: info["Margin"] as? Double,
+            originalPrice: info["OriginalPrice"] as? Double,
+            originalValue: info["OriginalValue"] as? Double,
+            price: info["Price"] as? Double,
+            symbol: symbol,
+            time: info["Time"] as? String,
+            value: info["Value"] as? Double
+        )
     }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let widgetData: String
+    let widgetData: [Provider.StockInfo]
 }
 
 struct WidgetEntryView : View {
     var entry: Provider.Entry
     
-    let textColour = Color.green
-
     var body: some View {
-        Text(entry.widgetData)
-            .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
-            .font(.custom("Helvetica Neue", size: 12))
-            .foregroundColor(textColour) // Ensuring the text color is white for better contrast
-            .lineLimit(nil)
-            .background(
-                LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.7), Color.gray.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing)
-            )
-            .containerBackground(for: .widget) {
-                LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.7), Color.gray.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+        VStack {
+            ForEach(entry.widgetData, id: \.symbol) { stock in
+                Text("\(stock.symbol ?? "N/A"): Val: \(stock.value.map { String(format: "%.2f", $0) } ?? "N/A"), Margin: \(stock.margin.map { String(format: "%.2f%", $0) } ?? "N/A"), Time: \(stock.time ?? "N/A")")
+                    .padding()
+                    .background(LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.7), Color.gray.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .cornerRadius(5)
+                    .foregroundColor(stock.margin ?? 0 >= 0 ? Color.green : Color.red)
             }
-            .widgetURL(URL(string: "your-url-scheme://action"))  // Optional: Add a deep link URL
+        }
+        .widgetURL(URL(string: "your-url-scheme://action")) // Optional: Add a deep link URL
     }
 }
-
 
 @main
 struct StockWidget: Widget {
@@ -124,5 +96,7 @@ struct StockWidget: Widget {
             WidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Your Widget Name")
+        .description("This is an example widget for showing stock data.")
     }
 }
+

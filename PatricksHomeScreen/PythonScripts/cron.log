@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'

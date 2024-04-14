@@ -42,6 +42,8 @@ def main():
     amount = []
     starting_price = []
 
+    # Open the CSV file and read the data
+    # Check if the command line argument is provided
     csv_file_path = "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/StockInfo.csv"
 
     with open(csv_file_path, newline='') as csvfile:

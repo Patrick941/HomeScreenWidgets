@@ -74,18 +74,56 @@ struct WidgetEntryView : View {
     var entry: Provider.Entry
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
+            // Header row showing total values
+            HStack {
+                Text("Balance: \(String(format: "%.2f", totalCurrentValue(entry.widgetData)))")
+                    .font(.system(size: 18, weight: .bold))  // Set font size and weight for header
+            }
+            .padding(.all, 10)
+            .foregroundColor(Color.blue)
+            // Individual stock entries
             ForEach(entry.widgetData, id: \.symbol) { stock in
-                Text("\(stock.symbol ?? "N/A"): Val: \(stock.value.map { String(format: "%.2f", $0) } ?? "N/A"), Margin: \(stock.margin.map { String(format: "%.2f%", $0) } ?? "N/A"), Time: \(stock.time ?? "N/A")")
-                    .padding()
-                    .background(LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.7), Color.gray.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                    .cornerRadius(5)
-                    .foregroundColor(stock.margin ?? 0 >= 0 ? Color.green : Color.red)
+                HStack {
+                    Text(stock.symbol ?? "N/A")
+                        .frame(width: 70, alignment: .leading)
+                    Text("\(stock.value.map { String(format: "$%.2f", $0) } ?? "N/A")")
+                        .frame(width: 60, alignment: .leading)
+                    Text("\(stock.margin.map { String(format: "%.2f%%", $0) } ?? "N/A")")
+                        .frame(width: 60, alignment: .leading)
+                    Text(stock.time ?? "N/A")
+                        .frame(width: 100, alignment: .leading)
+                }
+                .padding(.all, 5)
+                .background(
+                    LinearGradient(
+                        gradient: Gradient(colors: [Color.blue.opacity(0.2), Color.white.opacity(0.2)]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+                .cornerRadius(5)
+                .foregroundColor(stock.margin ?? 0 >= 0 ? Color.green : Color.red)
             }
         }
         .widgetURL(URL(string: "your-url-scheme://action")) // Optional: Add a deep link URL
+        .containerBackground(for: .widget) {
+            LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.2), Color.white.opacity(0.2)]), startPoint: .top, endPoint: .bottom)
+        }
+    }
+
+
+
+    // Helper methods to compute totals
+    func totalOriginalValue(_ widgetData: [Provider.StockInfo]) -> Double {
+        widgetData.compactMap { $0.originalValue }.reduce(0, +)
+    }
+
+    func totalCurrentValue(_ widgetData: [Provider.StockInfo]) -> Double {
+        widgetData.compactMap { $0.value }.reduce(0, +)
     }
 }
+
 
 @main
 struct StockWidget: Widget {

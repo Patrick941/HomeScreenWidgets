@@ -1,8 +1,652 @@
 Traceback (most recent call last):
-  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 1, in <module>
-    import requests
-ModuleNotFoundError: No module named 'requests'
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
 Traceback (most recent call last):
-  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 1, in <module>
-    import requests
-ModuleNotFoundError: No module named 'requests'
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 87, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 65, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 28, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 87, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 65, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 28, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py:25: SyntaxWarning: invalid escape sequence '\d'
+  price_text = re.sub('[^\d.]', '', price_text)
+Could not find the stock price element.
+Could not find the stock price element.
+Could not find the stock price element.
+Could not find the stock price element.
+Could not find the stock price element.
+Could not find the stock price element.
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Traceback (most recent call last):
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 84, in <module>
+    main()
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 62, in main
+    price, time = get_stock_price(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py", line 27, in get_stock_price
+    Value = float(Values[0])
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'etball'
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.83 Time: 09:00 PM Original Price: 172.0 Value: 562.1373000000001 Original Value: 569.32 Margin: -1.2616279069767369%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.65 Time: 09:00 PM Original Price: 305.0 Value: 491.68949999999995 Original Value: 497.15 Margin: -1.0983606557377124%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.63 Time: 09:00 PM Original Price: 419.31 Value: 343.31289999999996 Original Value: 348.02729999999997 Margin: -1.3546063771434038%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:00 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:00 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:00 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:05 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:05 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:05 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:05 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:05 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:05 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:10 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:10 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:10 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:10 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:10 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:10 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:15 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:15 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:15 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:15 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:15 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:15 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:20 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:20 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:20 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:20 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:20 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:20 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:25 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:25 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:25 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:25 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:25 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:25 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:30 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:30 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:30 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:30 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:30 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:30 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:35 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:35 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:35 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:35 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:35 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:35 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:40 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:40 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:40 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:40 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:40 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:40 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:45 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:45 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:45 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:45 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:45 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:45 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:50 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:50 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:50 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:50 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:50 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:50 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+
+Stock Details for QCOM: Symbol: QCOM Current Price: 169.84 Time: 09:55 PM Original Price: 172.0 Value: 562.1704 Original Value: 569.32 Margin: -1.25581395348837%
+
+Stock Details for CDNS: Symbol: CDNS Current Price: 301.56 Time: 09:55 PM Original Price: 305.0 Value: 491.5428 Original Value: 497.15 Margin: -1.1278688524590157%
+
+Stock Details for MSFT: Symbol: MSFT Current Price: 413.64 Time: 09:55 PM Original Price: 419.31 Value: 343.3212 Original Value: 348.02729999999997 Margin: -1.3522215067611114%
+
+Stock Details for AAPL: Symbol: AAPL Current Price: 172.69 Time: 09:55 PM Original Price: 168.75 Value: 305.6613 Original Value: 298.6875 Margin: 2.3348148148148136%
+
+Stock Details for AMD: Symbol: AMD Current Price: 160.32 Time: 09:55 PM Original Price: 177.91 Value: 269.33759999999995 Original Value: 298.8888 Margin: -9.887021527738746%
+
+Stock Details for INTC: Symbol: INTC Current Price: 36.31 Time: 09:55 PM Original Price: 41.37 Value: 263.2475 Original Value: 299.9325 Margin: -12.231085327532016%
+

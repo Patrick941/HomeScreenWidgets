@@ -14,13 +14,16 @@ struct Provider: TimelineProvider {
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> ()) {
         let currentDate = Date()
+        let refreshDate = Calendar.current.date(byAdding: .minute, value: 2, to: currentDate)! // Set next refresh in two minutes
+
         let entryData = loadWidgetData()
         
-        // Generate a timeline consisting of only one entry
+        // Generate a timeline consisting of an entry that updates every 2 minutes
         let entry = SimpleEntry(date: currentDate, widgetData: entryData)
-        let timeline = Timeline(entries: [entry], policy: .atEnd)
+        let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
         completion(timeline)
     }
+
     
     struct StockInfo: Decodable {
         let margin: Double?
@@ -77,7 +80,7 @@ struct WidgetEntryView : View {
         VStack(alignment: .leading) {
             // Header row showing total values
             HStack {
-                Text("Balance: \(String(format: "%.2f", totalCurrentValue(entry.widgetData)))")
+                Text("Balance: \(String(format: "$%.2f", totalCurrentValue(entry.widgetData)))")
                     .font(.system(size: 18, weight: .bold))  // Set font size and weight for header
             }
             .padding(.all, 10)

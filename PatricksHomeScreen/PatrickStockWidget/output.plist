@@ -5,104 +5,104 @@
 	<key>AAPL</key>
 	<dict>
 		<key>Margin</key>
-		<real>4.669629629629627</real>
+		<real>2.3348148148148136</real>
 		<key>Original Price</key>
 		<real>168.75</real>
 		<key>Original Value</key>
 		<real>298.6875</real>
 		<key>Price</key>
-		<real>176.63</real>
+		<real>172.69</real>
 		<key>Symbol</key>
 		<string>AAPL</string>
 		<key>Time</key>
-		<string>12:38 AM</string>
+		<string>09:40 PM</string>
 		<key>Value</key>
-		<real>312.6351</real>
+		<real>305.6613</real>
 	</dict>
 	<key>AMD</key>
 	<dict>
 		<key>Margin</key>
-		<real>-8.093980102298918</real>
+		<real>-9.887021527738746</real>
 		<key>Original Price</key>
 		<real>177.91</real>
 		<key>Original Value</key>
 		<real>298.8888</real>
 		<key>Price</key>
-		<real>163.51</real>
+		<real>160.32</real>
 		<key>Symbol</key>
 		<string>AMD</string>
 		<key>Time</key>
-		<string>12:38 AM</string>
+		<string>09:40 PM</string>
 		<key>Value</key>
-		<real>274.6968</real>
+		<real>269.33759999999995</real>
 	</dict>
 	<key>CDNS</key>
 	<dict>
 		<key>Margin</key>
-		<real>0.40000000000000896</real>
+		<real>-1.1278688524590157</real>
 		<key>Original Price</key>
 		<real>305.0</real>
 		<key>Original Value</key>
 		<real>497.15</real>
 		<key>Price</key>
-		<real>306.22</real>
+		<real>301.56</real>
 		<key>Symbol</key>
 		<string>CDNS</string>
 		<key>Time</key>
-		<string>12:38 AM</string>
+		<string>09:40 PM</string>
 		<key>Value</key>
-		<real>499.1386</real>
+		<real>491.5428</real>
 	</dict>
 	<key>INTC</key>
 	<dict>
 		<key>Margin</key>
-		<real>-13.657239545564417</real>
+		<real>-12.231085327532016</real>
 		<key>Original Price</key>
 		<real>41.37</real>
 		<key>Original Value</key>
 		<real>299.9325</real>
 		<key>Price</key>
-		<real>35.72</real>
+		<real>36.31</real>
 		<key>Symbol</key>
 		<string>INTC</string>
 		<key>Time</key>
-		<string>12:38 AM</string>
+		<string>09:40 PM</string>
 		<key>Value</key>
-		<real>258.96999999999997</real>
+		<real>263.2475</real>
 	</dict>
 	<key>MSFT</key>
 	<dict>
 		<key>Margin</key>
-		<real>0.6462998736018648</real>
+		<real>-1.3522215067611114</real>
 		<key>Original Price</key>
 		<real>419.31</real>
 		<key>Original Value</key>
 		<real>348.02729999999997</real>
 		<key>Price</key>
-		<real>422.02</real>
+		<real>413.64</real>
 		<key>Symbol</key>
 		<string>MSFT</string>
 		<key>Time</key>
-		<string>12:38 AM</string>
+		<string>09:40 PM</string>
 		<key>Value</key>
-		<real>350.2766</real>
+		<real>343.3212</real>
 	</dict>
 	<key>QCOM</key>
 	<dict>
 		<key>Margin</key>
-		<real>5.436046511627904</real>
+		<real>-1.25581395348837</real>
 		<key>Original Price</key>
 		<real>172.0</real>
 		<key>Original Value</key>
 		<real>569.32</real>
 		<key>Price</key>
-		<real>181.35</real>
+		<real>169.84</real>
 		<key>Symbol</key>
 		<string>QCOM</string>
 		<key>Time</key>
-		<string>12:38 AM</string>
+		<string>09:40 PM</string>
 		<key>Value</key>
-		<real>600.2685</real>
+		<real>562.1704</real>
 	</dict>
 </dict>
 </plist>

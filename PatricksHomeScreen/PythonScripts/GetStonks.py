@@ -18,24 +18,29 @@ def get_stock_price(stock_symbol):
         if response.status_code == 200:
             soup = BeautifulSoup(response.content, 'html.parser')
             # Extracting the current stock price per share
-            text = soup.text
-            matches = [(match.start(), match.end()) for match in re.finditer(r'\s*Ask\s*', text, flags=re.IGNORECASE)]
-
-            endChar = matches[0][1]
-            ValueText = text[endChar:]
-            Values = ValueText.split()
-            Value = float(Values[0])
+            price_tag = soup.find('fin-streamer', class_='livePrice')
+            if price_tag:
+                price_span = price_tag.find('span')  # Locate the span inside the fin-streamer
+                if price_span:
+                    price = float(price_span.text.strip())  # Extracting the price as float
+                else:
+                    print("Price span not found.")
+                    return None, None
+            else:
+                print("Price tag not found.")
+                return None, None
 
             # Extracting the time of day
             time = datetime.datetime.now().strftime("%I:%M %p")
 
-            return Value, time
+            return price, time
         else:
             print(f"Failed to retrieve data for {stock_symbol}. Status code: {response.status_code}")
             return None, None
     except requests.exceptions.RequestException as e:
         print(f"An error occurred while fetching data for {stock_symbol}: {e}")
         return None, None
+
 
 def main():
     stock_symbols = []
@@ -71,7 +76,7 @@ def main():
         stock = Output[symbol]
         print(f"Stock Details for {symbol}: Symbol: {stock['Symbol']} Current Price: {stock['Price']} Time: {stock['Time']} Original Price: {stock['Original Price']} Value: {stock['Value']} Original Value: {stock['Original Value']} Margin: {stock['Margin']}%\n")
     
-    output_directory = '/Users/patrick/Desktop/PatricksHomeScreen/PatrickStockWidget'
+    output_directory = '/Users/patrick/Documents'
     output_file = os.path.join(output_directory, 'output.plist')
 
 

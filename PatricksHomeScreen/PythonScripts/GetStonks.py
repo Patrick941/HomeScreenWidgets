@@ -76,7 +76,7 @@ def main():
         stock = Output[symbol]
         print(f"Stock Details for {symbol}: Symbol: {stock['Symbol']} Current Price: {stock['Price']} Time: {stock['Time']} Original Price: {stock['Original Price']} Value: {stock['Value']} Original Value: {stock['Original Value']} Margin: {stock['Margin']}%\n")
     
-    output_directory = '/Users/patrick/Documents'
+    output_directory = '/Users/patrick/Library/Group Containers/StockViewer/'
     output_file = os.path.join(output_directory, 'output.plist')
 
 

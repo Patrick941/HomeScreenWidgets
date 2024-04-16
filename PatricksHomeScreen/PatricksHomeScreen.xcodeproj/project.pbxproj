@@ -555,6 +555,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PatricksHomeScreen/Preview Content\"";
+				DEVELOPMENT_TEAM = 35NKSNBQQC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -581,6 +582,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PatricksHomeScreen/Preview Content\"";
+				DEVELOPMENT_TEAM = 35NKSNBQQC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -672,6 +674,7 @@
 				CODE_SIGN_ENTITLEMENTS = PatrickStockWidget/PatrickStockWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35NKSNBQQC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PatrickStockWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PatrickStockWidget;
@@ -699,6 +702,7 @@
 				CODE_SIGN_ENTITLEMENTS = PatrickStockWidget/PatrickStockWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35NKSNBQQC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PatrickStockWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PatrickStockWidget;

@@ -2,6 +2,7 @@ import WidgetKit
 import SwiftUI
 import Foundation
 
+// Provider conforming to TimelineProvider protocol
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), widgetData: [])
@@ -14,18 +15,16 @@ struct Provider: TimelineProvider {
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> ()) {
         let currentDate = Date()
-        let refreshDate = Calendar.current.date(byAdding: .minute, value: 2, to: currentDate)! // Set next refresh in two minutes
+        let refreshDate = Calendar.current.date(byAdding: .minute, value: 5, to: currentDate)! // Refresh in thirty minutes
 
         let entryData = loadWidgetData()
-        
-        // Generate a timeline consisting of an entry that updates every 2 minutes
         let entry = SimpleEntry(date: currentDate, widgetData: entryData)
         let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
         completion(timeline)
     }
-
     
-    struct StockInfo: Decodable {
+    // StockInfo type defined within the Provider struct
+    struct StockInfo {
         let margin: Double?
         let originalPrice: Double?
         let originalValue: Double?
@@ -36,43 +35,43 @@ struct Provider: TimelineProvider {
     }
 
     func loadWidgetData() -> [StockInfo] {
-        guard let url = Bundle.main.url(forResource: "output", withExtension: "plist") else {
+        guard let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "StockViewer")?.appendingPathComponent("output.plist") else {
+            print("Failed to get shared container URL")
             return []
         }
 
+        // Cache-busting by using a dummy query parameter
+        let uniqueURL = URL(string: "\(containerURL.absoluteString)?t=\(NSDate().timeIntervalSince1970)")!
+
         do {
-            let data = try Data(contentsOf: url)
+            let data = try Data(contentsOf: uniqueURL)
             if let result = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: [String: Any]] {
                 return result.map { (symbol, info) -> StockInfo in
-                    return parseStockInfo(symbol: symbol, info: info)
+                    return StockInfo(
+                        margin: info["Margin"] as? Double,
+                        originalPrice: info["OriginalPrice"] as? Double,
+                        originalValue: info["OriginalValue"] as? Double,
+                        price: info["Price"] as? Double,
+                        symbol: symbol,
+                        time: info["Time"] as? String,
+                        value: info["Value"] as? Double
+                    )
                 }
             } else {
                 return []
             }
         } catch {
-            print("Error during data loading or decoding: \(error)")
+            print("Error during data loading or decoding:", error)
             return []
         }
     }
 
-    func parseStockInfo(symbol: String, info: [String: Any]) -> StockInfo {
-        return StockInfo(
-            margin: info["Margin"] as? Double,
-            originalPrice: info["OriginalPrice"] as? Double,
-            originalValue: info["OriginalValue"] as? Double,
-            price: info["Price"] as? Double,
-            symbol: symbol,
-            time: info["Time"] as? String,
-            value: info["Value"] as? Double
-        )
-    }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let widgetData: [Provider.StockInfo]
 }
-
 struct WidgetEntryView : View {
     var entry: Provider.Entry
     
@@ -81,6 +80,11 @@ struct WidgetEntryView : View {
             // Header row showing total values
             HStack {
                 Text("Balance: \(String(format: "$%.2f", totalCurrentValue(entry.widgetData)))")
+                    .font(.system(size: 18, weight: .bold))  // Set font size and weight for header
+                
+                Spacer() // Add spacer to push the next text to the right
+                
+                Text("Difference: \(String(format: "$%.2f", totalOriginalValue(entry.widgetData) - totalCurrentValue(entry.widgetData)))")
                     .font(.system(size: 18, weight: .bold))  // Set font size and weight for header
             }
             .padding(.all, 10)

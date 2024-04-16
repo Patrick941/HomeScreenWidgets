@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AAPL</key>
+	<dict>
+		<key>Margin</key>
+		<real>0.37333333333333063</real>
+		<key>Original Price</key>
+		<real>168.75</real>
+		<key>Original Value</key>
+		<real>298.6875</real>
+		<key>Price</key>
+		<real>169.38</real>
+		<key>Symbol</key>
+		<string>AAPL</string>
+		<key>Time</key>
+		<string>09:10 PM</string>
+		<key>Value</key>
+		<real>299.8026</real>
+	</dict>
+	<key>AMD</key>
+	<dict>
+		<key>Margin</key>
+		<real>-8.122084199876335</real>
+		<key>Original Price</key>
+		<real>177.91</real>
+		<key>Original Value</key>
+		<real>298.8888</real>
+		<key>Price</key>
+		<real>163.46</real>
+		<key>Symbol</key>
+		<string>AMD</string>
+		<key>Time</key>
+		<string>09:10 PM</string>
+		<key>Value</key>
+		<real>274.6128</real>
+	</dict>
+	<key>CDNS</key>
+	<dict>
+		<key>Margin</key>
+		<real>-1.373770491803278</real>
+		<key>Original Price</key>
+		<real>305.0</real>
+		<key>Original Value</key>
+		<real>497.15</real>
+		<key>Price</key>
+		<real>300.81</real>
+		<key>Symbol</key>
+		<string>CDNS</string>
+		<key>Time</key>
+		<string>09:10 PM</string>
+		<key>Value</key>
+		<real>490.3203</real>
+	</dict>
+	<key>INTC</key>
+	<dict>
+		<key>Margin</key>
+		<real>-12.351945854483926</real>
+		<key>Original Price</key>
+		<real>41.37</real>
+		<key>Original Value</key>
+		<real>299.9325</real>
+		<key>Price</key>
+		<real>36.26</real>
+		<key>Symbol</key>
+		<string>INTC</string>
+		<key>Time</key>
+		<string>09:10 PM</string>
+		<key>Value</key>
+		<real>262.885</real>
+	</dict>
+	<key>MSFT</key>
+	<dict>
+		<key>Margin</key>
+		<real>-1.128043690825408</real>
+		<key>Original Price</key>
+		<real>419.31</real>
+		<key>Original Value</key>
+		<real>348.02729999999997</real>
+		<key>Price</key>
+		<real>414.58</real>
+		<key>Symbol</key>
+		<string>MSFT</string>
+		<key>Time</key>
+		<string>09:10 PM</string>
+		<key>Value</key>
+		<real>344.10139999999996</real>
+	</dict>
+	<key>QCOM</key>
+	<dict>
+		<key>Margin</key>
+		<real>-1.9883720930232485</real>
+		<key>Original Price</key>
+		<real>172.0</real>
+		<key>Original Value</key>
+		<real>569.32</real>
+		<key>Price</key>
+		<real>168.58</real>
+		<key>Symbol</key>
+		<string>QCOM</string>
+		<key>Time</key>
+		<string>09:10 PM</string>
+		<key>Value</key>
+		<real>557.9998</real>
+	</dict>
+</dict>
+</plist>

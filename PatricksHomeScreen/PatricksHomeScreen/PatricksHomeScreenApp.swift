@@ -3,23 +3,55 @@ import Foundation
 
 @main
 struct StockViewerApp: App {
-    let stockData: [String: [String: Any]] = {
-        // Run the Python script
-        let scriptPath = "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py"
-        let infoPath = "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/StockInfo.csv"
-        runPythonScript(at: scriptPath, withArgument: infoPath)
-
-        // Load the plist
-        let plistPath = "/Users/patrick/Desktop/PatricksHomeScreen/StockWidget/output.plist"
-        return loadPlist(from: plistPath)
-    }()
+    @StateObject private var viewModel = StockViewModel()
 
     var body: some Scene {
         WindowGroup {
-            ContentView(stockData: stockData)
+            ContentView(stockData: viewModel.stockData)
+                .onAppear {
+                    viewModel.loadData()
+                }
+                .onReceive(Timer.publish(every: 30, on: .main, in: .common).autoconnect()) { _ in
+                    viewModel.loadData()
+                }
         }
     }
 }
+
+class StockViewModel: ObservableObject {
+    @Published var stockData: [String: [String: Any]] = [:]
+
+    init() {
+        loadData()
+    }
+
+    func loadData() {
+        let scriptPath = "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/GetStonks.py"
+        let infoPath = "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/output.plist"
+        runPythonScript(at: scriptPath, withArgument: infoPath)
+
+        let plistPath = "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/output.plist"
+        stockData = loadPlist(from: plistPath)
+        savePlistToSharedContainer(stockData: stockData)
+    }
+}
+
+func savePlistToSharedContainer(stockData: [String: [String: Any]]) {
+    guard let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "StockViewer") else {
+        print("Failed to get shared container URL")
+        return
+    }
+    let plistURL = containerURL.appendingPathComponent("output.plist")
+
+    do {
+        let data = try PropertyListSerialization.data(fromPropertyList: stockData, format: .xml, options: 0)
+        try data.write(to: plistURL, options: .atomic)
+        print("Successfully wrote plist to shared container at \(plistURL)")
+    } catch {
+        print("Failed to write plist to shared container:", error)
+    }
+}
+
 
 func runPythonScript(at path: String, withArgument argument: String) {
     let process = Process()

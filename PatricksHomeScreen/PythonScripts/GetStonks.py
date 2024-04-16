@@ -49,7 +49,7 @@ def main():
 
     # Open the CSV file and read the data
     # Check if the command line argument is provided
-    csv_file_path = "/Users/patrick/Desktop/PatricksHomeScreen/PythonScripts/StockInfo.csv"
+    csv_file_path = "/Users/patrick/Documents/HomeScreenWidgets/PatricksHomeScreen/PythonScripts/StockInfo.csv"
 
     with open(csv_file_path, newline='') as csvfile:
         reader = csv.reader(csvfile)

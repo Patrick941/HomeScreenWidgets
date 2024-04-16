@@ -15,7 +15,7 @@ struct Provider: TimelineProvider {
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> ()) {
         let currentDate = Date()
-        let refreshDate = Calendar.current.date(byAdding: .minute, value: 5, to: currentDate)! // Refresh in thirty minutes
+        let refreshDate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate)! // Refresh in thirty minutes
 
         let entryData = loadWidgetData()
         let entry = SimpleEntry(date: currentDate, widgetData: entryData)
@@ -49,8 +49,8 @@ struct Provider: TimelineProvider {
                 return result.map { (symbol, info) -> StockInfo in
                     return StockInfo(
                         margin: info["Margin"] as? Double,
-                        originalPrice: info["OriginalPrice"] as? Double,
-                        originalValue: info["OriginalValue"] as? Double,
+                        originalPrice: info["Original Price"] as? Double,
+                        originalValue: info["Original Value"] as? Double,
                         price: info["Price"] as? Double,
                         symbol: symbol,
                         time: info["Time"] as? String,
@@ -84,7 +84,7 @@ struct WidgetEntryView : View {
                 
                 Spacer() // Add spacer to push the next text to the right
                 
-                Text("Difference: \(String(format: "$%.2f", totalOriginalValue(entry.widgetData) - totalCurrentValue(entry.widgetData)))")
+                Text("Difference: \(String(format: "$%.2f", totalCurrentValue(entry.widgetData) - totalOriginalValue(entry.widgetData)))")
                     .font(.system(size: 18, weight: .bold))  // Set font size and weight for header
             }
             .padding(.all, 10)
